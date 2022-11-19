@@ -1,26 +1,34 @@
 import Counter from './components/Counter';
+import AddUser from './components/FormUsingClass';
+import AddUserFunction from './components/FormUsingFunction';
 import HomeComponent from './components/HomeComponent';
 import Navbar from './components/Navbar'
 function App() {
-  const name = "rutika"
+const login =false
 
-
-  const hello = ()=>{
+  const hello = () => {
     alert("function call through props");
   }
+  
   return (
-   <div>
-    <Navbar/>
-    <Counter/>
-    
-    <HomeComponent 
+    <div>
+      <Navbar />
+      <div className='container'>
+        {
+          login ? <AddUser /> : <AddUserFunction/>
+        }
+      </div>
+
+      {/* <Counter/> */}
+
+      {/* <HomeComponent 
     name={name} 
     age={23}
     info={{address:"ngp",country:"INDIA"}} 
     hobbies={["swimming","riverRafting","skydyving","trekking"]}
     hellofunction = {hello}
-    />
-   </div>
+    /> */}
+    </div>
   );
 }
 

@@ -14,12 +14,12 @@ class HomeComponent extends Component{
     render(){
         return(
             <>
-            <h1>{this.state.name}</h1>
-            <h1>{this.state.age}</h1>
-            <h1>{this.state.name}</h1>
-            <h1>{this.state.info.address}</h1>
-            <h1>{this.state.info.country.toLowerCase()}</h1>
-            <button onClick={this.props.hellofunction}>hello</button>
+                <h1>{this.state.name}</h1>
+                <h1>{this.state.age}</h1>
+                <h1>{this.state.name}</h1>
+                <h1>{this.state.info.address}</h1>
+                <h1>{this.state.info.country.toLowerCase()}</h1>
+                <button onClick={this.props.hellofunction}>hello</button>
             </>
         )
     }
