@@ -1,7 +1,9 @@
+import ApiTest from './components/APIcomponent';
 import Counter from './components/Counter';
 import AddUser from './components/FormUsingClass';
 import AddUserFunction from './components/FormUsingFunction';
 import HomeComponent from './components/HomeComponent';
+import Lifecycle from './components/LifeCycle';
 import Navbar from './components/Navbar'
 import UserData from './components/Userdata';
 function App() {
@@ -31,7 +33,9 @@ const login =false
     /> */}
 
 
-    <UserData/>
+    {/* <center><Lifecycle/></center> */}
+    {/* <UserData/> */}
+    <ApiTest/>
     </div>
   );
 }

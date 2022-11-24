@@ -1,6 +1,7 @@
 import React from 'react';
 import { Modal,Button } from 'react-bootstrap';
 import { useState } from 'react';
+import Lifecycle from './LifeCycle';
 const Adduser = (props) => {
     const [userId, setUserId] = useState(0);
     const [body, setBody] = useState("");
