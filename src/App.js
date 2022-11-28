@@ -1,3 +1,4 @@
+import AddData from './components/AddData';
 import ApiTest from './components/APIcomponent';
 import Counter from './components/Counter';
 import AddUser from './components/FormUsingClass';
@@ -35,7 +36,8 @@ const login =false
 
     {/* <center><Lifecycle/></center> */}
     {/* <UserData/> */}
-    <ApiTest/>
+    {/* <ApiTest/> */}
+    <AddData/>
     </div>
   );
 }
